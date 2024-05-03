@@ -1,0 +1,7 @@
+@import url('body/contact_1.css')(min-width: 725px);
+@import url("footer/1.css")(min-width: 725px);
+@import url("header/1.css")(min-width: 725px);
+
+@import url('body/contact_2.css')(max-width: 725px);
+@import url('footer/2.css')(max-width: 725px);
+@import url('header/2.css')(max-width: 725px);

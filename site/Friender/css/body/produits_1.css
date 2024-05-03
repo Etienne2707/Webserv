@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+h2{
+	font-size:140%
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	margin:0;
+	background: center / contain no-repeat url("../../image/bg.svg");
+	background-size : cover;
+	text-align : center;
+	color : black;
+	background-color: #f2f2f2; 
+}
+
+
+.prod{
+	display:flex;
+	flex-wrap:wrap;
+	text-align:center;
+	margin: 15px 20% 15px 20% ;
+	border-radius : 25%;
+	background-color:#009473;
+	background-size : cover;
+	
+}
+
+.text{
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.text p{
+	margin-left : 20px;
+	margin-right : 20px;
+}
+
+.prod .image{
+	width:40%;
+	height:auto;
+	margin-top: 10px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius : 35%;
+}

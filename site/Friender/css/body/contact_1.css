@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	margin:0;
+	background: center / contain no-repeat url("../../image/bg.svg");
+	background-size : cover;
+	color : black;
+	background-color: #f2f2f2;
+}
+
+.contacts{
+	text-align:center;
+}
+
+.main{
+	display:flex;
+	flex-wrap:wrap;
+	margin:24px;
+}
+.obligatoire{
+	color : red;
+}
+
+.formulaire{
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+.formulaire .forms{
+	white-space: pre-line;
+}
+
+.formulaire input{
+	width: 300px;
+	padding:8px;
+	border-radius:5px;
+	border : 1px solid grey;
+}
+
+#valid_info{
+	width : 30px;
+}
+
+.carte{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}

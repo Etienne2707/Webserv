@@ -1,0 +1,59 @@
+footer{
+	background-color:#f2f2f2;
+	display:grid;
+	grid-template-columns: 50% auto;
+	text-align:center;
+	color : green;	
+}
+footer p{
+	margin : 5px;
+}
+
+footer a{
+	color :green;
+}
+footer .image{
+	margin : auto;
+	display:block;
+	height:auto;
+	width:80%;
+}
+
+
+footer .title{
+	margin-top: 20px;
+	margin-bottom : 20px;
+}
+.social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: green;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: white;
+	transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+	color: black;
+	background-color: white;
+}
+
+.end{
+	grid-template-columns : 50% auto;
+	display:flex;
+	color : green;
+	padding : 10px;
+	border-top: 1px solid green;
+	background-color:#f2f2f2;
+}
+
+.end p{
+	opacity : 0.4;
+}
+.end .update{
+	margin-left:auto;
+}

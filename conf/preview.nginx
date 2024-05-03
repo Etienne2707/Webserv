@@ -1,0 +1,52 @@
+server {
+	# port
+	listen 80;
+
+	# hosts
+	server_name webserv.fr www.webserv.fr;
+
+	# default error pages
+	error_page 404 /errors/404.html;
+	error_page 503 /errors/503.html;
+
+	# body size
+	client_max_body_size 500m;
+
+	# root
+	root /www/;
+
+	location / {
+		# allowed http methods
+		limit_except POST {
+			deny all;
+		}
+
+		# http redirection
+		rewrite /media/etienne https://en.wikipedia.org/wiki/%C3%89tienne_Baluze;
+
+		# directory listing
+		autoindex off;
+
+		# default file
+		index index.html;
+
+		# file upload
+		upload_store /www/uploads/;
+	}
+
+	location /etienne {
+		# root
+		root /www/etienne/
+
+		# allowed http methods
+		limit_except DELETE {
+			allow all;
+		}
+
+		# directory listing
+		autoindex on;
+
+		# default file
+		index etienne.html;
+	}
+}
